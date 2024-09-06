@@ -1,3 +1,44 @@
+<h1 align='center'>Eneji Admin</h1>
+<p>Đây là admin dashboard và cũng là backend server cho 
+<a href="https://github.com/k1enttt/eneji-storefront">Eneji Storefront</a></p>
+
+# Cài đặt
+
+### Thiết lập các biến môi trường
+
+```shell
+cd eneji-admin
+mv .env.template .env
+```
+
+Bạn cần phải thay biến `DATABASE_URL` trong file `.env` bằng connection string của mình để server kết nối vào database. Connection string sẽ có dạng như sau:
+
+```shell
+
+DATABASE_URL=postgresql://username:password@host:port/dbname[?paramspec]
+
+```
+
+### Cài đặt dependencies
+
+```shell
+npm install
+```
+
+### Bắt đầu dev
+
+Bạn cần đảm bảo rằng phiên bản `npm` đang sử dụng phải >=16.14.0
+
+```shell
+medusa develop
+# hoặc
+npm run dev
+```
+
+### Cài đặt Storefront
+
+Bạn clone <a href="https://github.com/k1enttt/eneji-storefront">Eneji Storefront</a> và cài đặt theo README.md của nó.
+
 <p align="center">
   <a href="https://www.medusajs.com">
   <picture>
@@ -34,7 +75,7 @@
 
 ## Compatibility
 
-This starter is compatible with versions >= 1.8.0 of `@medusajs/medusa`. 
+This starter is compatible with versions >= 1.8.0 of `@medusajs/medusa`.
 
 ## Getting Started
 
